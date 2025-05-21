@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Kevin V. M. Bezerra's Web and Computer Programming Certificate portfolio.">
+  <meta name="author" content="Kevin V. M. Bezerra">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Bezerra | Home</title>
+  <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+  <header>
+    <img src="images/Kevin_Bezerra.jpeg" alt="Kevin Bezerra" width="80">
+    <h1>Kevin Bezerra</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="chamber.html">Chamber</a></li>
+        <li><a href="final.html">Final</a></li>
+        <li><a href="https://github.com/KevinBezerra">GitHub Profile</a></li>
+        <li><a href="https://www.linkedin.com/in/kevin-bezerra-40aa32188/">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="cards">
+      <div class="card">
+        <h2>Course Work</h2>
+        <ul>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Fortaleza, Brazil</h2>
+        <figure>
+          <img src="images/Fortaleza.jpg" alt="Beira Mar Beach" width="300">
+          <figcaption>Beira Mar Beach</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section>
+      <h2>Web and Computer Programming Certificate</h2>
+
+      <div class="filters">
+        <button>All</button>
+        <button>CSE</button>
+        <button>WDD</button>
+      </div>
+
+      <div class="course-buttons">
+        <button class="cse">CSE 110</button>
+        <button class="wdd">WDD 130</button>
+        <button class="cse">CSE 111</button>
+        <button class="cse">CSE 210</button>
+        <button class="wdd">WDD 131</button>
+        <button class="wdd">WDD 231</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear"></span> 🎮 Kevin V. M. Bezerra 🌍 Brazil </p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    // Dynamically insert the current year
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+    // Dynamically insert the last modified date
+    document.getElementById("lastModified").textContent = "Last Update: " + document.lastModified;
+  </script>
+</body>
+</html>
