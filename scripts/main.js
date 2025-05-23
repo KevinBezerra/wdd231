@@ -98,7 +98,7 @@ document.getElementById('cseBtn').addEventListener('click', () => {
     renderCourses(cseCourses);
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('currentyear').textContent = new Date().getFullYear();
 document.getElementById('lastModified').textContent = document.lastModified;
 
 renderCourses(courses);
