@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "Praia de Iracema Hotel",
+      "address": "Av. Beira Mar, 2000, Fortaleza, CE",
+      "phone": "(85) 3555-1001",
+      "website": "https://www.praiairacemahotel.com.br",
+      "image": "images/hotel_praia.jpg",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Ceará Software Solutions",
+      "address": "Rua dos Tabajaras, 50, Centro",
+      "phone": "(85) 3555-2002",
+      "website": "https://www.cearasoftware.com.br",
+      "image": "images/office.jpg",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Restaurante Sabor do Sertão",
+      "address": "Av. Monsenhor Tabosa, 1500",
+      "phone": "(85) 3555-3003",
+      "website": "https://www.sabordosertao.com.br",
+      "image": "images/restaurante_tipico.jpg",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Artesanato cearense",
+      "address": "Mercado Central, Loja 15",
+      "phone": "(85) 3555-4004",
+      "website": "https://www.artesanatocearense.com.br",
+      "image": "images/artesanato.jpg",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "Fortaleza Legal Advisors",
+      "address": "Av. Santos Dumont, 300, Aldeota",
+      "phone": "(85) 3555-5005",
+      "website": "https://www.fortalezalegal.com.br",
+      "image": "images/fortaleza_advogados.jpg",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Escola de Kitesurf do Futuro",
+      "address": "Praia do Futuro, Barraca 25",
+      "phone": "(85) 3555-6006",
+      "website": "https://www.kitesurfdofuturo.com.br",
+      "image": "images/kitesurf.jpg",
+      "membershipLevel": "Bronze"
+    },
+    {
+      "name": "Tapiocaria Cearense",
+      "address": "Av. da Abolição, 4040, Meireles",
+      "phone": "(85) 3555-7007",
+      "website": "https://www.tapiocariacearense.com.br",
+      "image": "images/tapiocaria.jpg",
+      "membershipLevel": "Silver"
+    }
+  ]
+}

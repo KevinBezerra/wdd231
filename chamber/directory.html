@@ -3,16 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory of local businesses and organizations in [Your Town/City/Region] Chamber of Commerce. Find members, services, and support local businesses.">
-    <meta name="author" content="[Your Name or Chamber Name]">
+    <title>Fortaleza Chamber of Commerce</title>
+    <meta name="description" content="Homepage and Member Directory of the Fortaleza Chamber of Commerce. Your hub for business news, events, and community support in Fortaleza, Ceará.">
+    <meta name="author" content="Kevin Bezerra">
 
-    <meta property="og:title" content="Directory of Members | [Your Town/City/Region] Chamber of Commerce">
-    <meta property="og:description" content="Explore the comprehensive directory of local businesses and organizations that are members of the [Your Town/City/Region] Chamber of Commerce. Support local! ">
-    <meta property="og:image" content="https://www.yourchamberwebsite.com/images/directory_share_image.jpg">
-    <meta property="og:url" content="https://www.yourchamberwebsite.com/directory.html">
-    <meta property="og:type" content="website"> <title>Directory | Fortaleza Chamber of Commerce</title>
-    <link rel="icon" href="favicon.png" type="image/png">
-    </head>
+    <meta property="og:title" content="Fortaleza Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Your hub for business news, events, and community support in Fortaleza, Ceará.">
+    <meta property="og:image" content="https://placehold.co/1200x630/003366/FFFFFF/png?text=Fortaleza+Chamber">
+    <meta property="og:url" content="https://kevinbezerra.github.io/wdd231/">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
 <body>
-    </body>
+
+    <header>
+        <div class="logo">
+            <img src="images/fcc_logo.png" alt="Fortaleza Chamber Logo">
+            <h1>Fortaleza Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <a href="index.html" class="active">Home & Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/fortaleza_beira_mar_wide.jpg" alt="Hero image of Fortaleza">
+        </section>
+
+        <div class="home-grid">
+            <section class="events card">
+                <h2>Events</h2>
+                <p>Stay tuned for upcoming events!</p>
+            </section>
+
+            <section class="weather card">
+                <h2>Current Weather</h2>
+                <div class="weather-info">
+                    <img src="images/1555512.png" alt="Weather Icon">
+                    <p class="temp">28°C</p>
+                    <p>Partly Cloudy</p>
+                    <p>High: 30°C | Low: 25°C</p>
+                </div>
+            </section>
+
+            <section class="forecast card">
+                <h2>Weather Forecast</h2>
+                <p><strong>Thursday:</strong> 29°C</p>
+                <p><strong>Friday:</strong> 29°C</p>
+                <p><strong>Saturday:</strong> 30°C</p>
+            </section>
+        </div>
+
+        <section class="directory-section">
+            <hr>
+            <h2>Member Directory</h2>
+            <div class="menu">
+                <button id="grid">Grid</button>
+                <button id="list">List</button>
+            </div>
+            <article class="grid">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Fortaleza Chamber of Commerce</h3>
+            <p>1001 Av. Santos Dumont</p>
+            <p>Fortaleza, Ceará, Brazil</p>
+            <p>info@fortalezacc.org</p>
+            <p>(85) 9555-2300</p>
+        </div>
+        <div class="footer-social">
+            <a href="#"><img src="images/facebook.webp" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.webp" alt="Instagram"></a>
+        </div>
+        <div class="footer-info">
+            <p><strong>WDD231 Class Project</strong></p>
+            <p>Kevin Bezerra</p>
+            <p>©<span id="current-year"></span> Fortaleza Chamber of Commerce</p>
+            <p>Last Modification: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
 </html>
