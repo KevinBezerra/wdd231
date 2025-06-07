@@ -110,6 +110,79 @@ main {
     height: 50px;
 }
 
+/* --- Spotlight Section --- */
+.spotlights {
+    padding: 1rem;
+    margin: 2rem auto;
+}
+
+.spotlights h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.spotlight-card img {
+    max-width: 200px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.spotlight-card h3 {
+    margin: 0.5rem 0;
+}
+
+.spotlight-card .address, .spotlight-card .phone {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 4px 0;
+}
+
+.spotlight-card a {
+    margin-top: 8px;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+.spotlight-card .membership-level {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 0.35rem 0.75rem;
+    border-radius: var(--border-radius);
+    display: inline-block;
+    color: white;
+}
+
+.spotlight-card .membership-level.gold {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.spotlight-card .membership-level.silver {
+    background-color: #C0C0C0;
+    color: #333;
+}
+
+/* --- Directory Page Specific Styles --- */
 .directory-section {
     padding: 1rem;
     max-width: 1200px;
