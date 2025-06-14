@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Fortaleza Chamber of Commerce</title>
+    <meta name="description" content="Join the Fortaleza Chamber of Commerce and become part of our thriving business community.">
+    <meta name="author" content="Kevin Bezerra">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/fcc_logo.png" alt="Fortaleza Chamber Logo">
+            <h1>Fortaleza Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <main class="join-main">
+        <h1>Join Our Chamber</h1>
+        <div class="join-content">
+            <form id="joinForm" action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name* <input type="text" name="fname" title="Applicant's First Name" required autocomplete="given-name"></label>
+                    <label>Last Name* <input type="text" name="lname" title="Applicant's Last Name" required autocomplete="family-name"></label>
+                    <label>Organizational Title <input type="text" name="orgtitle" title="Title within the organization" pattern="[a-zA-Z\s\-]{7,}" autocomplete="organization-title"></label>
+                    <label>Email Address* <input type="email" name="email" placeholder="example@email.com" title="Your Email Address" required autocomplete="email"></label>
+                    <label>Mobile Phone* <input type="tel" name="phone" title="Your Mobile Phone Number" required autocomplete="tel"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business/Organization's Name* <input type="text" name="bizname" title="Name of your Business/Organization" required autocomplete="organization"></label>
+                    <label>Membership Level*
+                        <select name="memlevel" title="Select a Membership Level" required>
+                            <option value="" disabled selected>Select a Level</option>
+                            <option value="NP">NP Membership (No Fee)</option>
+                            <option value="Bronze">Bronze Membership</option>
+                            <option value="Silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>Business/Organization Description
+                        <textarea name="bizdesc" title="Business or Organization Description"></textarea>
+                    </label>
+                </fieldset>
+                
+                <input type="hidden" id="timestamp" name="timestamp">
+                <input type="submit" value="Join the Chamber" class="submitBtn">
+            </form>
+
+            <section class="membership-levels card-container">
+                <h2>Membership Levels</h2>
+                <div class="level-card">
+                    <h3>NP (Non-Profit)</h3>
+                    <p>For non-profit organizations. No fee.</p>
+                    <a href="#" class="modal-link" data-modal="np-modal">View Benefits</a>
+                </div>
+                <div class="level-card">
+                    <h3>Bronze</h3>
+                    <p>Ideal for small businesses and startups.</p>
+                    <a href="#" class="modal-link" data-modal="bronze-modal">View Benefits</a>
+                </div>
+                <div class="level-card">
+                    <h3>Silver</h3>
+                    <p>Enhanced visibility and event opportunities.</p>
+                    <a href="#" class="modal-link" data-modal="silver-modal">View Benefits</a>
+                </div>
+                <div class="level-card">
+                    <h3>Gold</h3>
+                    <p>Maximum exposure and premium benefits.</p>
+                    <a href="#" class="modal-link" data-modal="gold-modal">View Benefits</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="np-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>Listing in the chamber directory</li>
+                <li>Access to community forums</li>
+                <li>Invitation to non-profit roundtable events</li>
+            </ul>
+        </div>
+    </div>
+    <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>All NP benefits</li>
+                <li>Discounts on chamber event tickets</li>
+                <li>Business name listed on the chamber website</li>
+            </ul>
+        </div>
+    </div>
+    <div id="silver-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Training seminars and workshops</li>
+                <li>One company spotlight on social media per year</li>
+            </ul>
+        </div>
+    </div>
+    <div id="gold-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Homepage spotlight positions</li>
+                <li>Free booth at the annual chamber expo</li>
+                <li>Priority event sponsorship opportunities</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
